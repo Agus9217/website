@@ -8,6 +8,7 @@ import { initRoute } from './routes'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
+      {localStorage.setItem('chakra-ui-color-mode', 'dark')}
       <RouterProvider router={initRoute} />
     </ChakraProvider>
   </React.StrictMode>,
